@@ -1,0 +1,119 @@
+This document collects notes about the HyprSuprime Cam Release Candidate 2 (HSC RC2) reprocessing in cycle S18.
+
+Description of the HSC RC2 processing can be found in \citeds{DMTN-088}.
+Summary of all individual HSC RC2 reprocessing runs from \texttt{w\_2018\_04} to \texttt{w\_2020\_34} can be found in the Reprocessing of the HSC RC2 Dataset Confluence notes: \url{https://confluence.lsstcorp.org/display/DM/Reprocessing+of+the+HSC+RC2+dataset}.
+The definition of HSC RC2 dataset is given in \jira{DM-11345}.
+
+This document summarizes version 04, 06, 08, 10, 12, 14, 15, 17, 18 reprocessing runs. SLURM ids of runs are defined in \jira{DM-14056}.
+
+All of the plots were created with \texttt{usage.py} (see \url{https://github.com/lsst-dm/ldf\_ops\_tools}) and were assigned a resolution of 8000 so as to make sure to catch any short jobs.
+The node-hours and the elapsed run times do not depend on the resolution, as they re extracted directly from the SLURM accounting data.
+
+
+\clearpage
+\section{Summary of node utilization across releases}
+\input{tables/summary}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{figures/RC2_nodehours.png}
+  \caption{Node-hours usage across different releases.}
+  \label{SummaryFig}
+\end{figure}
+
+\clearpage
+\section{Node utilization per processing step for release w\_2018\_04}
+\input{tables/w04}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{figures/usage-w_2018_04-ultimate.png}
+  \caption{Node-hours usage per processing step for w\_2018\_04}
+  \label{fig:PerTask04}
+\end{figure}
+
+
+\clearpage
+\section{Node utilization per processing step for release w\_2018\_06}
+\input{tables/w06}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{figures/usage-w_2018_06-ultimate.png}
+  \caption{Node-hours usage per processing step for w\_2018\_06}
+  \label{fig:PerTask06}
+\end{figure}
+
+
+\clearpage
+\section{Node utilization per processing step for release w\_2018\_08}
+\input{tables/w08}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{figures/usage-w_2018_08-ultimate.png}
+  \caption{Node-hours usage per processing step for w\_2018\_08}
+  \label{fig:PerTask08}
+\end{figure}
+
+
+\clearpage
+\section{Node utilization per processing step for release w\_2018\_10}
+\input{tables/w10}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{figures/usage-w_2018_10-ultimate.png}
+  \caption{Node-hours usage per processing step for w\_2018\_10}
+  \label{fig:PerTask10}
+\end{figure}
+
+
+\clearpage
+\section{Node utilization per processing step for release w\_2018\_12}
+\input{tables/w12}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{figures/usage-w_2018_12-ultimate.png}
+  \caption{Node-hours usage per processing step for w\_2018\_12}
+  \label{fig:PerTask12}
+\end{figure}
+
+
+\clearpage
+\section{Node utilization per processing step for release w\_2018\_14}
+\input{tables/w14}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{figures/usage-w_2018_14-ultimate.png}
+  \caption{Node-hours usage per processing step for w\_2018\_14}
+  \label{fig:PerTask14}
+\end{figure}
+
+
+\clearpage
+\section{Node utilization per processing step for release w\_2018\_15}
+\input{tables/w15}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{figures/usage-w_2018_15.png}
+  \caption{Node-hours usage per processing step for w\_2018\_15}
+  \label{fig:PerTask15}
+\end{figure}
+
+
+\clearpage
+\section{Node utilization per processing step for release w\_2018\_17}
+\input{tables/w17}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{figures/usage-w_2018_17.png}
+  \caption{Node-hours usage per processing step for w\_2018\_17}
+  \label{fig:PerTask17}
+\end{figure}
+
+
+\clearpage
+\section{Node utilization per processing step for release w\_2018\_18}
+\input{tables/w18}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{figures/usage-w_2018_18.png}
+  \caption{Node-hours usage per processing step for w\_2018\_18}
+  \label{fig:PerTask18}
+\end{figure}
